@@ -17,7 +17,7 @@ export const exit = (text) => {
  * @typedef {"javascript" | "typescript"} Script
  * @typedef {"css" | "postcss" | "scss"} StyleLanguage
  * @typedef {"bulma" | "tailwindcss"} StyleFramework
- * @typedef {"graphql-server" | "mdsvex"} Other
+ * @typedef {"graphql-server" | "mdsvex" | "unplugin-icons"} Other
  * @typedef {"eslint" | "prettier"} Quality
  * @typedef {"firebase-hosting"} Deploy
  */
@@ -27,7 +27,7 @@ const scripts = ["javascript", "typescript"];
 /** @type {StyleLanguage[]} */
 const styleLanguages = ["css", "postcss", "scss"];
 /** @type {Other[]} */
-const others = ["graphql-server", "mdsvex"];
+const others = ["graphql-server", "mdsvex", "unplugin-icons"];
 /** @type {Quality[]} */
 const qualities = ["eslint", "prettier"];
 /** @type {Deploy[]} */
@@ -564,10 +564,10 @@ export const getNpxCommand = ({ npx, platform }) => {
 /**
  * @typedef {typeof packageManagers} PackageManagers
  * @typedef {keyof PackageManagers} PackageManager
- 
+
  * @typedef {typeof npxs} NPXs
  * @typedef {keyof NPXs} NPX
- * 
+ *
  * @typedef {NPXs | PackageManagers} Tools
  * @typedef {NPX | PackageManager} Tool
  */
